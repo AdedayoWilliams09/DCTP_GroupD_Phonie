@@ -1,0 +1,165 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing:border-box;
+
+}
+
+body{
+    font-family: 'Montserrat Alternates', sans-serif;
+    background-color: #ffffff;
+}
+
+.container{
+    height: 95vh;
+    display: flex;
+}
+
+.container > *{
+    flex: 1;
+}
+
+.left-content{
+    display: flex;
+    background-color:#9747FF ;
+    align-items: center;
+    justify-content: center;
+}
+
+.left-content img {
+    width: 60%;
+}
+
+.right-content{
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+}
+
+.right-content h1{
+    font-size: 30px;
+    font-weight: 800;
+    color: #9747FF;
+    text-align: left;
+    align-self: flex-start;
+    margin-left: 3.9rem;
+}
+
+.form-box {
+display: flex;
+align-items: center;
+justify-content: center;
+border-radius: 5px;
+border: 1.5px solid #9747FF;
+box-shadow: 5px 5px 2px #5A5A5A;
+height: 80%;
+width: 80%;
+}
+
+
+.phone-logo-box {
+    display: inline-flex;
+    position: relative;
+}
+
+#country-code, #phoneNumber {
+    height: 35px;
+}
+
+#phoneNumber {
+    width: 100%;
+    padding: 0 0.7rem;
+    color: #9747FF;
+    outline: none;
+    border: 1px solid #5A5A5A;
+}
+
+.carrierLogo {
+    position: absolute;
+    right: 5px;
+    top: 13%;
+    border-radius: 50%;
+    display: none;
+}
+
+.show {
+    display: block;
+}
+
+
+#error-message{
+    color: red;
+    font-size: 12px;
+    margin-top: 5px;
+ }
+
+footer {
+    text-align: center;
+    margin-top: 1rem;
+    color: #9747FF;
+}
+
+/* media querries for responsiveness */
+@media screen and (max-width: 1100px) {
+    .left-content img {
+        width: 52%;
+    }
+}
+
+@media screen and (max-width: 880px) {
+
+    .container {
+     flex-direction: column;
+     width: 82%;
+     margin: 1.2rem auto;
+     border-radius: 5px;
+     box-shadow: 2px 0px 20px #5A5A5A;
+    }
+
+    .form-box {
+        width: 100%;
+       }
+
+    .left-content {
+        height: 20%;
+        flex: 0;
+    }
+
+    .left-content img {
+        width: 20%;
+    }
+
+    .right-content h1 {
+        margin-left: unset;
+    }
+ }
+
+
+ 
+@media screen and (max-width: 430px) {
+    .container{
+        height: 84vh;
+        margin-top: 2.5rem;
+    }
+
+    .phone-logo-box {
+	display: flex;
+    }
+    
+    #country-code {
+        width: 50%;
+	margin: 10px auto;
+    }
+    
+    #phoneNumber {
+        width: 100%;
+	margin: 0 auto;
+    }
+ }
+
+ 
